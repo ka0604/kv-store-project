@@ -72,10 +72,10 @@ def main():
             key = parts[1]
             value = store.get(key)
 
-            if value:
+            if value is not None:
                 print(value)
             else:
-                print("NOT FOUND")
+                print("")
 
 if __name__ == "__main__":
     main()
